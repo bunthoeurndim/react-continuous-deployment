@@ -17,5 +17,5 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://bunthoeurndim.github.io/react-continuous-deployment/",
+  "homepage": "https://bunthoeurndim.github.io/react-continuous-deployment/"
 }
