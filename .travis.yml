@@ -5,5 +5,5 @@ after_success:
  - git config --global user.name "bunthoeurndim"
  - git config --global user.email "bunthoeurndim@gmail.com"
  - git remote rm origin
- - git remote add origin https://${GH_TOKEN}@github.com/bunthoeurndim/react-continuous-deployment.git
+ - git remote add origin https://bunthoeurndim:${GH_TOKEN}@github.com:bunthoeurndim/react-continuous-deployment.git
  - npm run deploy
