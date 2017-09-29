@@ -1,9 +1,9 @@
 language: node_js
 node_js:
  - "node"
- deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: "c8c9b298f794e1d39937159a77b28ab76999cac7" # Set in travis-ci.org dashboard
-  on:
-    branch: master
+after_success:
+ - git config --global user.name "bunthoeurndim"
+ - git config --global user.email "bunthoeurndim@gmail.com"
+ - git remote rm origin
+ - git remote add origin https://${GH_TOKEN}@github.com/bunthoeurndim/react-continuous-deployment.git
+ - npm run deploy
